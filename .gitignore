@@ -15,8 +15,10 @@
 
 # next.js
 /.next/
-/.vinext/
 /out/
+
+# production
+/build
 
 # misc
 .DS_Store
@@ -34,13 +36,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-/dist/
-/.wrangler/
-/outputs/
-/work/
-
-# Local design inputs (preserved in the workspace, not required at runtime)
-/inpos/
-/Brand-colors.png
-/brand-logo.png
-/Expert Codex Prompt — Nu Body of Dallas Website UI-UX Redesign.md
+# typescript
+*.tsbuildinfo
+next-env.d.ts
