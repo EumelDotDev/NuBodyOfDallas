@@ -31,7 +31,7 @@ export default function CtaSection() {
         </p>
         
         <Link 
-          href="/contact"
+          href="/booking"
           className="inline-flex items-center justify-center gap-3 bg-white text-charcoal-900 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider hover:bg-sand-100 transition-colors duration-300 group"
         >
           Book Your Appointment

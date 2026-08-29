@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* CTA & Mobile Menu */}
           <div className="flex items-center space-x-4">
             <Link
-              href="/contact"
+              href="/booking"
               className="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm uppercase tracking-wider font-semibold rounded-full text-sand-50 bg-charcoal-900 hover:bg-charcoal-800 transition-colors"
             >
               Book Now

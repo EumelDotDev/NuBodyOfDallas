@@ -167,7 +167,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                   )}
 
                   <Link 
-                    href="/contact" 
+                    href="/booking" 
                     className="flex items-center justify-center gap-2 w-full bg-charcoal-900 text-sand-50 py-4 rounded-xl font-semibold uppercase tracking-wider hover:bg-charcoal-800 transition-colors"
                   >
                     Book Appointment

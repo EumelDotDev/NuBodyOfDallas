@@ -36,7 +36,7 @@ export default function Home() {
             </h1>
             <div className="flex flex-wrap items-center gap-4">
               <Link 
-                href="/contact" 
+                href="/booking" 
                 className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-sm uppercase tracking-wider font-semibold rounded-full text-sand-50 bg-charcoal-900 hover:bg-charcoal-800 transition-colors"
               >
                 Book a Treatment

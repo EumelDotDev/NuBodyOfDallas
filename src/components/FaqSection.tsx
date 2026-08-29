@@ -69,7 +69,7 @@ export default function FaqSection() {
             
             <div>
               <Link 
-                href="/contact"
+                href="/booking"
                 className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-white bg-charcoal-900 rounded-full hover:bg-charcoal-800 transition-colors"
               >
                 Contact Us

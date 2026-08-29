@@ -103,8 +103,8 @@ export default function AboutStory() {
             {/* Image 1 (Back/Left) */}
             <div className="absolute top-0 left-0 w-2/3 h-2/3 rounded-2xl overflow-hidden shadow-2xl z-10">
               <Image 
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80" 
-                alt="Spa Treatment"
+                src="/images/about_bg.jpg" 
+                alt="Clinic Interior"
                 fill
                 className="object-cover"
               />
