@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import ServicesSection from "@/components/ServicesSection";
+import AboutSection from "@/components/AboutSection";
+import TrustSection from "@/components/TrustSection";
+import ProcessSection from "@/components/ProcessSection";
+import FaqSection from "@/components/FaqSection";
 
 export default function Home() {
   return (
@@ -50,17 +55,15 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Philosophy / Intro Section */}
-      <section className="py-24 bg-sand-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif text-charcoal-900 mb-6">Where Clinical Precision Meets Luxury</h2>
-            <p className="text-lg text-charcoal-800/80 leading-relaxed">
-              At Nu Body of Dallas, we believe in a holistic approach to aesthetics. Our state-of-the-art treatments are designed not just to enhance your natural beauty, but to provide a restorative experience that elevates your overall well-being.
-            </p>
-          </div>
-        </div>
-      </section>
+      <ServicesSection />
+      
+      <AboutSection />
+      
+      <TrustSection />
+      
+      <ProcessSection />
+      
+      <FaqSection />
     </main>
   );
 }
