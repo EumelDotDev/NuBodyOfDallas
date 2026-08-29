@@ -8,13 +8,17 @@ export interface AddOn {
   price: string;
 }
 
+import { StaticImageData } from 'next/image';
+import neuroService from '@/assets/neuroservice.jpeg';
+import ivService from '@/assets/iv-service.jpeg';
+
 export interface ServiceData {
   id: string;
   slug: string;
   title: string;
   subtitle: string;
   category: string;
-  image: string;
+  image: string | StaticImageData;
   overview: string;
   price: string;
   duration: string;
@@ -32,7 +36,7 @@ export const services: ServiceData[] = [
     title: "Neuromodulators",
     subtitle: "Botox & Dysport for smooth, youthful skin",
     category: "Injectables",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80",
+    image: neuroService,
     overview: "Smooth fine lines and prevent wrinkles with precise, subtle injections that relax facial muscles. Our expert application ensures you look naturally refreshed, never overdone.",
     price: "$13 / unit",
     duration: "30 Minutes",
@@ -137,7 +141,7 @@ export const services: ServiceData[] = [
     title: "IV Hydration Therapy",
     subtitle: "Direct nutrient absorption for optimal wellness",
     category: "Wellness",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80",
+    image: ivService,
     overview: "Instantly replenish essential vitamins, minerals, and fluids. Bypassing the digestive system ensures 100% absorption to boost energy, immunity, and recovery.",
     price: "Starting at $150",
     duration: "45-60 Minutes",

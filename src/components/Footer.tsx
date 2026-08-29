@@ -8,25 +8,11 @@ export default function Footer() {
       
       {/* Top Banner (CTA) */}
       <div className="border-b border-charcoal-800/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col md:flex-row items-center justify-between gap-8">
-          <h2 className="text-3xl md:text-4xl font-serif text-white max-w-md text-center md:text-left">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col md:flex-row items-center justify-center gap-8">
+          <h2 className="text-3xl md:text-4xl font-serif text-white max-w-md text-center">
             Transform your skin <span className="italic">with us</span>
           </h2>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Link 
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-charcoal-900 bg-white rounded-full hover:bg-sand-50 transition-colors w-full sm:w-auto text-center"
-            >
-              Book an Appointment
-            </Link>
-            <Link 
-              href="/services"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-white border border-white/20 rounded-full hover:bg-white/10 transition-colors w-full sm:w-auto text-center"
-            >
-              Our Services
-            </Link>
-          </div>
-        </div>
+                  </div>
       </div>
 
       {/* Main Footer Content */}
