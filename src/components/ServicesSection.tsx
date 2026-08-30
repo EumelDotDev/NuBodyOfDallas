@@ -1,36 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const services = [
-  {
-    id: "injectables",
-    title: "Injectables",
-    description: "Botox, Restylane, Juvederm, and Radiesse for youthful, flawless skin.",
-    image: "/images/service_injectables.jpg",
-    link: "/services/injectables",
-  },
-  {
-    id: "laser",
-    title: "Laser Services",
-    description: "Advanced laser hair removal, photofacials, and skin resurfacing.",
-    image: "/images/service_laser.jpg",
-    link: "/services/laser",
-  },
-  {
-    id: "skin",
-    title: "Skin Treatments",
-    description: "Rejuvenating microdermabrasion and medical-grade chemical peels.",
-    image: "/images/service_skin.jpg",
-    link: "/services/skin",
-  },
-  {
-    id: "mens",
-    title: "Men's Services",
-    description: "Specialized aesthetic and grooming treatments tailored for men.",
-    image: "/images/service_mens.jpg",
-    link: "/services/mens",
-  },
-];
+import { services } from "@/data/services";
 
 export default function ServicesSection() {
   return (
@@ -52,10 +22,10 @@ export default function ServicesSection() {
 
         {/* Expanding Cards Container */}
         <div className="flex flex-col md:flex-row gap-4 h-auto md:h-[600px]">
-          {services.map((service) => (
+          {services.slice(0, 4).map((service) => (
             <Link 
               key={service.id}
-              href={service.link}
+              href={`/services/${service.slug}`}
               className="group relative flex-1 flex flex-col justify-end overflow-hidden rounded-2xl bg-sand-100 transition-all duration-700 ease-in-out hover:md:flex-[1.8] h-[400px] md:h-auto cursor-pointer"
             >
               {/* Background Image */}
@@ -77,7 +47,7 @@ export default function ServicesSection() {
                 {/* Hidden description that reveals on hover (hidden on desktop until hover, always visible on mobile) */}
                 <div className="md:opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
                   <p className="text-sm text-sand-50/90 mb-4 leading-relaxed">
-                    {service.description}
+                    {service.overview}
                   </p>
                   <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider">
                     Explore Treatment
